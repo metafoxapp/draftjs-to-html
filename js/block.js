@@ -532,6 +532,7 @@ export function getBlockMarkup(
       blockHtml.push(`</${blockTag}>`);
     }
   }
-  blockHtml.push('\n');
+  // remove push enline cause filter break
+  //blockHtml.push('\n');
   return blockHtml.join('');
 }
